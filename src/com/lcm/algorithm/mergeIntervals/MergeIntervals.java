@@ -11,7 +11,9 @@ public class MergeIntervals {
 
     public static void main(String[] args) {
 
-        int[][] intervals = new int[][]{{1, 3}, {2, 6}, {8, 10}, {15, 18}};
+//        int[][] intervals = new int[][]{{1, 3}, {2, 6}, {8, 10}, {15, 18}};
+//        int[][] intervals = new int[][]{{1, 4}, {4, 5}};
+        int[][] intervals = new int[][]{{1, 4}, {0, 1}};
 
         int[][] result = myMerge(intervals);
 
@@ -67,19 +69,19 @@ public class MergeIntervals {
         int b2 = intervalB[1];
         //区间合并6种场景
         //1. A在B的左边
-        if(a2 <= b1) {
+        if(a2 < b1) {
             return null;
         }
         //2. A在B的右边
-        if(a1 >= b2) {
+        if(a1 > b2) {
             return null;
         }
         //3. A在B的左边，并且A与B相交
-        if(a1 < b1 && a2 > b1 && a2 < b2) {
+        if(a1 <= b1 && a2 >= b1 && a2 <= b2) {
             return new int[]{a1, b2};
         }
         //4. A在B的右边，并且A与B相交
-        if(a1 < b1 && a1 < b2 && a2 > b1) {
+        if(b1 <= a1 && b2 >= a1 && b2 <= a2) {
             return new int[]{b1, a2};
         }
         //5. A完全包含B
