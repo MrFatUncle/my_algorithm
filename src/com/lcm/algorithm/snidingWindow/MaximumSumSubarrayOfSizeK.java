@@ -6,10 +6,10 @@ import java.util.PriorityQueue;
 /**
  * FileName: MaximumSumSubarrayOfSizeK
  * 剑指offer 59
- * LeetCode 239
+ * LeetCode 239.
  * Author:   liaocm
  * Date:     2021/2/5 11:31
- * Description: 滑动窗口的最大值
+ * Description: 239.滑动窗口的最大值
  * History:
  */
 public class MaximumSumSubarrayOfSizeK {
