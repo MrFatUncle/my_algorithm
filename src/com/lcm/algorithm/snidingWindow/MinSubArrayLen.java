@@ -10,7 +10,10 @@ package com.lcm.algorithm.snidingWindow;
 public class MinSubArrayLen {
 
     public static void main(String[] args) {
-
+        int[]nums = new int[]{10,2,3};
+        int target = 6;
+        int i = minSubArrayLen2(target, nums);
+        System.out.println(i);
 
 
     }
@@ -58,5 +61,33 @@ public class MinSubArrayLen {
 
 
         return min;
+    }
+
+    private static int minSubArrayLen2(int target, int[] nums) {
+        int min = 0;
+        while(++min <= nums.length) {
+            int total = 0;
+            for (int i = 0; i < nums.length; i++) {
+                if(i >= min) {
+                    break;
+                }
+                total += nums[i];
+            }
+            if(total >= target) {
+                return min;
+            }
+            for (int i = 1; i < nums.length; i++) {
+
+                if(i + min - 1 > nums.length - 1) {
+                    break;
+                }
+                total = total - nums[i - 1] + nums[i + min - 1];
+                if(total >= target) {
+                    return min;
+                }
+            }
+
+        }
+        return 0;
     }
 }
