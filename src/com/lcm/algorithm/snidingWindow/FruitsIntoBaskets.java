@@ -1,10 +1,3 @@
-/**
- * FileName: FruitsIntoBaskets
- * Author:   liaocm
- * Date:     2021/3/4 9:05
- * Description: 904.水果成栏
- * History:
- */
 package com.lcm.algorithm.snidingWindow;
 
 import java.util.HashMap;
@@ -12,6 +5,13 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * FileName: FruitsIntoBaskets
+ * Author:   liaocm
+ * Date:     2021/3/4 9:05
+ * Description: 904.水果成栏
+ * History:
+ */
 public class FruitsIntoBaskets {
 
     public static void main(String[] args) {

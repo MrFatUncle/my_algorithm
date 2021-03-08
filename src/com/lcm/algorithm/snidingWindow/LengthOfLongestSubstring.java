@@ -1,3 +1,7 @@
+package com.lcm.algorithm.snidingWindow;
+
+import java.util.*;
+
 /**
  * FileName: LengthOfLongestSubstring
  * Author:   liaocm
@@ -5,10 +9,6 @@
  * Description: 3.无重复字符的最长子串
  * History:
  */
-package com.lcm.algorithm.snidingWindow;
-
-import java.util.*;
-
 public class LengthOfLongestSubstring {
 
     public static void main(String[] args) {

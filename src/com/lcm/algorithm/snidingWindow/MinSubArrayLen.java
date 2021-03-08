@@ -1,3 +1,5 @@
+package com.lcm.algorithm.snidingWindow;
+
 /**
  * FileName: MinSubArrayLen
  * Author:   liaocm
@@ -5,8 +7,6 @@
  * Description: 209.长度最小的子数组
  * History:
  */
-package com.lcm.algorithm.snidingWindow;
-
 public class MinSubArrayLen {
 
     public static void main(String[] args) {
