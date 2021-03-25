@@ -7,7 +7,9 @@
  */
 package com.lcm.collection.map;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -21,5 +23,10 @@ public class HashMapTest {
         Map<Integer, Integer> map1 = new ConcurrentHashMap<>();
 
         map1.put(1, 1);
+
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            list.add(i);
+        }
     }
 }
