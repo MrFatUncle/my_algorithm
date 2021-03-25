@@ -6,7 +6,7 @@ import java.util.List;
  * FileName: ThreeSumToZero
  * Author:   liaocm
  * Date:     2021/3/25 9:38
- * Description: 15.三数之和为0
+ * Description: 15.三数之和为0 .
  * History:
  */
 public class ThreeSumToZero {
